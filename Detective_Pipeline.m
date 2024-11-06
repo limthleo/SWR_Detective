@@ -69,7 +69,7 @@ scores = round(100*(scores-min(scores))./(max(scores)-min(scores))); % minmax no
 if isfield(Data.SWR, "manvalid")
     manvalid = Data.SWR.manvalid;
 else
-    manvalid = true(length(scores), 1);
+    manvalid = false(length(scores), 1);
 end
 
 % Manually validate each event
